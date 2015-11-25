@@ -6,7 +6,7 @@ namespace DIContainer.Commands
     {
         public override void Execute()
         {
-            Console.WriteLine(DateTime.Now);
+            Writer.WriteLine(DateTime.Now);
         }
     }
 }

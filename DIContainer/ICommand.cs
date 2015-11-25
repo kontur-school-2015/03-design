@@ -1,5 +1,7 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
+using Ninject;
 
 namespace DIContainer
 {
@@ -11,6 +13,9 @@ namespace DIContainer
         }
 
         public string Name { get; private set; }
+        
+		[Inject]
+		public TextWriter Writer { get; set; }
 
         public abstract void Execute();
     }

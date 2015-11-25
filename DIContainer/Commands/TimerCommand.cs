@@ -15,9 +15,9 @@ namespace DIContainer.Commands
         public override void Execute()
         {
             var timeout = TimeSpan.FromMilliseconds(arguments.GetInt(0));
-            Console.WriteLine("Waiting for " + timeout);
+            Writer.WriteLine("Waiting for " + timeout);
             Thread.Sleep(timeout);
-            Console.WriteLine("Done!");
+            Writer.WriteLine("Done!");
         }
     }
 }
